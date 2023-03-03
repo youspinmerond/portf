@@ -19,10 +19,10 @@ export default function Header() {
         </div>
       </div>
       <div className={styles.menu}>
-        <div className="home" onClick={(e:any) => change(e)}>Home</div>
-        <div className="CV" onClick={(e:any) => change(e)}>CV</div>
-        <div className="projects" onClick={(e:any) => change(e)}>Projects</div>
-        <div className="skills" onClick={(e:any) => change(e)}>Skills</div>
+        <button id={styles.button} className="home" onClick={(e:any) => change(e)}>Home</button>
+        <button id={styles.button} className="CV" onClick={(e:any) => change(e)}>CV</button>
+        <button id={styles.button} className="projects" onClick={(e:any) => change(e)}>Projects</button>
+        <button id={styles.button} className="skills" onClick={(e:any) => change(e)}>Skills</button>
       </div>
     </header>
   );
