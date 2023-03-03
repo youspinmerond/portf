@@ -19,7 +19,7 @@ export default function CV() {
             <h3 className={styles.h3}>
               Education
             </h3>
-            <p>School :P, most of my knowledges taken in internet.</p>
+            <p>School :P, most of my knowledges taken from internet.</p>
           </div>
           <div className="part">
             <h3 className={styles.h3}>
@@ -69,7 +69,7 @@ export default function CV() {
             </h2>
             <p className={styles.p}>
               &gt;6 hours spending by sitting at PC.
-              Prefer tea to coffe, growning in IT. Love math and physics ( Native sciences ).
+              Prefer tea to coffee, growning in IT. Like math and physics ( Native sciences ).
               Working with PC&apos;s, laptop&apos;s, phone&apos;s hardware.
               Also, I love EDM, Electric and sometimes classic music.
             </p>
