@@ -1,0 +1,81 @@
+@import ../../../styles/variables
+  
+
+.main
+  color: $main
+
+.head
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 4rem 0 2rem 0
+
+
+.skills
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+@media screen and ( max-width: 800px )
+  .skills
+    display: block
+
+.skill
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 15rem
+  &>*
+    margin: .5rem 0
+
+.CV
+  background: $background
+  color: $second
+  padding: 1rem 2rem
+
+.h1
+  font-size: 4rem
+
+.h2
+  font-size: 2rem
+
+.h3
+  font-size: 1.5rem
+
+.p
+  display: inline
+
+.a
+  text-decoration: none
+  color: $second
+  font-weight: 700
+
+.marker
+  font-weight: 700
+  color: $background
+  font-size: 1.2rem
+
+.grid
+  margin: 1rem 0 0
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+  &>*
+    margin: 1rem 2rem 1rem 0
+
+@media screen and ( max-width: 1200px )
+
+  .grid
+    display: block
+    margin: 1 2rem 0 0
+
+.progress
+  display: inline-block
+  width: 5rem
+  height: .5rem
+  background: $second
+.bar
+  display: block
+  height: 100%
+  width: 60%
+  background: $main
+  border-right: 2px solid $background

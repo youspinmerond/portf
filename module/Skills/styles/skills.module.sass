@@ -1,0 +1,105 @@
+@import ../../../styles/variables
+  
+
+.main
+  color: $main
+
+.head
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 4rem 0 2rem 0
+
+.skills
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+.skill
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  width: 15rem
+  &>*
+    margin: .5rem 0
+
+.skillsandstack
+  background: $background
+  color: $second
+  padding: 1rem 2rem
+
+.h1
+  font-size: 4rem
+
+.h2
+  font-size: 2rem
+
+.h3
+  font-size: 1.5rem
+
+.p
+  display: inline
+
+.a
+  text-decoration: none
+  color: $second
+  font-weight: 700
+
+.marker
+  font-weight: 700
+  color: $background
+  font-size: 1.2rem
+
+.grid
+  margin: 1rem 0 0
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+
+  &>*
+    margin: 1rem 2rem 1rem 0
+
+
+@media screen and ( max-width: 75rem )
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+@media screen and ( max-width: 56.25rem )
+  .grid
+    display: block
+    grid-template-columns: repeat(auto-fill, 400px)
+
+.box
+  border: 2px solid $second
+  padding: 1rem
+  width: 15rem
+  height: 10rem
+
+  &>h2
+    height: 4rem
+
+  &_bottom
+    display: flex
+    flex-wrap: wrap
+  &_elem
+    display: flex
+    justify-content: center
+    border: 2px solid $second
+    border-radius: 2px
+    width: 5rem
+    margin: .5rem
+
+@media screen and ( max-width: 75rem )
+  .box
+    height: auto
+    &_elem
+      width: 5.5rem
+
+@media screen and ( max-width: 60rem )
+  .box
+    width: 30rem
+    &_elem
+      font-size: 1rem
+
+@media screen and ( max-width: 50rem )
+  .box
+    width: auto

@@ -1,0 +1,66 @@
+@import ../../../styles/variables
+  
+
+.main
+  color: $main
+
+.head
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 4rem 0 2rem 0
+
+.grid
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  row-gap: 2rem
+
+@media screen and ( max-width: 50rem )
+  .grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin: 0 2rem
+
+@media screen and ( max-width: 40rem)
+  .grid
+    justify-content: center
+
+.project
+  border: 2px solid $second
+  padding: 1rem 2rem
+  width: 15rem
+  height: 5rem
+
+.projects
+  background: $background
+  color: $second
+  padding: 1rem 2rem
+  
+.h1
+  font-size: 4rem
+
+.h2
+  font-size: 2rem
+
+.h3
+  font-size: 1.5rem
+
+.p
+  display: inline
+
+.a
+  text-decoration: none
+  color: $second
+  font-weight: 700
+
+.marker
+  font-weight: 700
+  color: $background
+  font-size: 1.2rem
+
+.marker
+  font-weight: 700
+  color: $background
+  font-size: 1.2rem
